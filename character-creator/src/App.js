@@ -1,22 +1,29 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState } from 'react';
 import axios from 'axios'
 import './App.css';
 
 function App() {
   const [image, setImage] = useState('')
 
-  useEffect(() => { 
-    axios.get('https://api.generated.photos/api/v1/faces?api_key=-oSJ9MnkYiiimwgLEOefKQ')
+  const handleChange = () => { 
+    axios 
+    .get('https://api.generated.photos/api/v1/faces?api_key=-oSJ9MnkYiiimwgLEOefKQ')
     .then(res => {
-      console.log(res.data)
-  }).catch(err => {
+      const uri = res.data.faces
+      uri && setImage(uri)
+    })
+    .catch(err => {
     console.log(err.message)
-  })
-})
+  });
+};
     
   return (
     <div className="App">
-    <h1> character creator </h1>
+    <h1> Character Creator </h1>
+    {image && <img src={image} alt="CHARACTER FACES" />}
+    <button type='button' onClick={handleChange}>
+    New Character 
+    </button> 
     </div>
   );
 }
