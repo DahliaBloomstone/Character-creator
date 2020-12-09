@@ -1,10 +1,30 @@
 .App {
   text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+  text-indent: 50px;
+  letter-spacing: 7px;
+  text-shadow: 2px 2px 5px yellow;
+  background-image: url("https://miro.medium.com/max/1400/1*h8gLX9aXdgViN0HdyQaP5g.png");
+  background-position: bottom right;
+
+
 }
+div {
+  background-image: url("https://miro.medium.com/max/1400/1*h8gLX9aXdgViN0HdyQaP5g.png");
+}
+
+div {
+  background-image: url("https://miro.medium.com/max/1400/1*h8gLX9aXdgViN0HdyQaP5g.png");
+  background-position: bottom right;
+}
+
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  background-image: url("https://miro.medium.com/max/1400/1*h8gLX9aXdgViN0HdyQaP5g.png");
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -22,6 +42,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background-image: url("https://miro.medium.com/max/1400/1*h8gLX9aXdgViN0HdyQaP5g.png");
+
 }
 
 .App-link {
@@ -36,3 +58,4 @@
     transform: rotate(360deg);
   }
 }
+

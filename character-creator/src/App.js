@@ -19,7 +19,10 @@ function App() {
     
   return (
     <div className="App">
-    <h1> Character Creator </h1>
+    <h2> Character Creator </h2>
+    <p>&#128512; &#127774; &#127773;</p>
+
+    <h5> AI Generated Characters! </h5>
     {image && <img src={image} alt="CHARACTER FACES" />}
     <button type='button' onClick={handleChange}>
     New Character 
